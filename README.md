@@ -26,7 +26,7 @@ You can pass along multiple dynamic URL parameters if needed.
 
 # Clickjack Protection
 
-Lastly if you try to iframe/embed a website URL and it does not display, this is probably due to [clickjack protection](https://www.imperva.com/learn/application-security/clickjacking/). A source website can define if they will allow their website to be iframed or not. It is in their control and you cannot do anything about it. So if their website does not display, you can turn on Chrome debugger and search for [__X-Frame-Options:SAMEORIGIN__](https://www.keycdn.com/blog/x-frame-options) errors.
+If you try to iframe/embed a website URL and it does not display, this is probably due to [clickjack protection](https://www.imperva.com/learn/application-security/clickjacking/). A source website can define if they will allow their website to be iframed or not. It is in their control and you cannot do anything about it. So if their website does not display, you can turn on Chrome debugger and search for [__X-Frame-Options:SAMEORIGIN__](https://www.keycdn.com/blog/x-frame-options) errors to verify it is a clickjack issue.
 
 # Tableau Setup
 
