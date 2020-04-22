@@ -4,6 +4,8 @@ THIS SOFTWARE IS COVERED BY [THIS DISCLAIMER](https://raw.githubusercontent.com/
 
 This is enhanced iframe utility component to embed other page/site inside Salesforce. It was primarily built to show a Tableau viz inside Salesforce as there was not specific Lightning Web Component for iframes. I also added ability to automatically scale the Tableau viz if the size of the component changes based on stretching/shrinking the browser window. So the Tableau via will grow and shrink in size instead of rolling off the page and having typical iframe scroll bars.
 
+![alt text](https://github.com/thedges/PSIFramePlus/blob/master/TableauVizCommunity.png "Tableau Viz Community")
+
 Here are the main configuration options:
 
 | Parameter  | Definition |
@@ -32,17 +34,17 @@ Typically the Tableau SE will provide a URL to a Tableau Viz like following:
 
 https://public.tableau.com/views/SanFranciscoDashboards/SFDashboards
 
-<img src="https://github.com/thedges/PSIFramePlus/blob/master/TableauViz.png" height="300" />
+![alt text](https://github.com/thedges/PSIFramePlus/blob/master/TableauViz.png "Tableau Viz")
 
 Tableau supports some extra URL parameters that help embed a Viz on a page. These extra parameters tell Tableau to remove things like the header, footer, toolbar, etc... The extra URL parameters I add to a Tableau URL are the following
-
+```
 ?iframeSizedToWindow=true&:embed=y&:showAppBanner=false&:display_count=no&:toolbar=no&:showShareOptions=false&:showVizHome=no
-
+```
 So for example, the above Tableau URL now becomes the following which is just a clean Tableau Viz that can now be embedded:
 
 https://public.tableau.com/views/SanFranciscoDashboards/SFDashboards?iframeSizedToWindow=true&:embed=y&:showAppBanner=false&:display_count=no&:toolbar=no&:showShareOptions=false&:showVizHome=no
 
-<img src="https://github.com/thedges/PSIFramePlus/blob/master/TableauVizEmbed.png" height="300" />
+![alt text](https://github.com/thedges/PSIFramePlus/blob/master/TableauVizEmbed.png "Embed Tableau Viz")
 
 # Installation Instructions
 
