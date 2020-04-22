@@ -16,6 +16,12 @@ Here are the main configuration options:
 
 # Dynamic URL Parameters
 
+The component also supports ability to provide dynamic URL parameters if the component is placed on a record page. This would be used so you could pass along an account number, customer id, case number, etc... to the remote site as a URL parameter. Just put in single squirrely brackets the API name of the record field you want to pass. For example if you want to pass along CaseNumber on the URL, you would format the URL like following:
+
+https://somesite.com/samplepage?casenum={CaseNumber}
+
+You can pass along multiple dynamic URL parameters if needed.
+
 # Clickjack Protection
 
 Lastly if you try to iframe/embed a website URL and it does not display, this is probably due to [clickjack protection](https://www.imperva.com/learn/application-security/clickjacking/). A source website can define if they will allow their website to be iframed or not. It is in their control and you cannot do anything about it. So if their website does not display, you can turn on Chrome debugger and search for [__X-Frame-Options:SAMEORIGIN__](https://www.keycdn.com/blog/x-frame-options) errors.
@@ -26,7 +32,7 @@ Typically the Tableau SE will provide a URL to a Tableau Viz like following:
 
 https://public.tableau.com/views/SanFranciscoDashboards/SFDashboards
 
-(place image here)
+<img src="https://github.com/thedges/PSIFramePlus/blob/master/TableauViz.png" height="300" />
 
 Tableau supports some extra URL parameters that help embed a Viz on a page. These extra parameters tell Tableau to remove things like the header, footer, toolbar, etc... The extra URL parameters I add to a Tableau URL are the following
 
@@ -36,7 +42,7 @@ So for example, the above Tableau URL now becomes the following which is just a 
 
 https://public.tableau.com/views/SanFranciscoDashboards/SFDashboards?iframeSizedToWindow=true&:embed=y&:showAppBanner=false&:display_count=no&:toolbar=no&:showShareOptions=false&:showVizHome=no
 
-(place image here)
+<img src="https://github.com/thedges/PSIFramePlus/blob/master/TableauVizEmbed.png" height="300" />
 
 # Installation Instructions
 
