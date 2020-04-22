@@ -1,5 +1,5 @@
 # PSIFramePlus
-Enhanced iframe utility component...<more details coming>
+Enhanced iframe utility component...more documentation details coming
 
 # Installation Instructions
 Click below button to install this package:
