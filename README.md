@@ -34,18 +34,15 @@ https://public.tableau.com/views/SanFranciscoDashboards/SFDashboards
 
 ![alt text](https://github.com/thedges/PSIFramePlus/blob/master/TableauViz.png "Tableau Viz")
 
-<img src="https://github.com/thedges/PSIFramePlus/blob/master/TableauViz.png" height="300" />
-
 Tableau supports some extra URL parameters that help embed a Viz on a page. These extra parameters tell Tableau to remove things like the header, footer, toolbar, etc... The extra URL parameters I add to a Tableau URL are the following
-
+```
 ?iframeSizedToWindow=true&:embed=y&:showAppBanner=false&:display_count=no&:toolbar=no&:showShareOptions=false&:showVizHome=no
-
+```
 So for example, the above Tableau URL now becomes the following which is just a clean Tableau Viz that can now be embedded:
 
 https://public.tableau.com/views/SanFranciscoDashboards/SFDashboards?iframeSizedToWindow=true&:embed=y&:showAppBanner=false&:display_count=no&:toolbar=no&:showShareOptions=false&:showVizHome=no
 
 ![alt text](https://github.com/thedges/PSIFramePlus/blob/master/TableauVizEmbed.png "Embed Tableau Viz")
-<img src="https://github.com/thedges/PSIFramePlus/blob/master/TableauVizEmbed.png" height="300" />
 
 # Installation Instructions
 
