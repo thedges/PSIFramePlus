@@ -1,0 +1,41 @@
+<template>
+    <!--
+    <div class="slds-card">
+        <iframe id="form-iframe" src={url} height={height} width={width} style={cssStyle} frameborder={frameBorder}
+            scrolling={scrolling} onload={adjustIFrame}></iframe>
+    </div>
+-->
+
+    <!--
+    <div class="slds-card wrapper" style="position:relative;padding-top:56.25%">
+        <iframe class="frame1" id="form-iframe" src={url} allowfullscreen
+        style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder={frameBorder}
+            scrolling={scrolling} onload={adjustIFrame}></iframe>
+    </div>
+-->
+
+    <!--
+<div class="slds-card wrapper" style="border:1px;position:relative;width:100%;height:auto;">
+    <iframe class="frame1" id="form-iframe" src={url} allowfullscreen
+    style="transform-origin: top left;  position: absolute;  height: 100%; width:100%;" frameborder={frameBorder}
+        scrolling={scrolling} onload={adjustIFrame}></iframe>
+</div>
+-->
+
+    <div class="slds-card main">
+        <div class="wrapper" style="border:1px;position:relative;width:100%;height:auto;">
+            <iframe class="frame1" src={url} allowfullscreen
+                style="transform-origin: top left;  position: absolute;  height: 100%; width:100%;"
+                frameborder={frameBorder} scrolling={scrolling} onload={adjustIFrame}></iframe>
+        </div>
+    </div>
+
+    <!--
+    <div class="slds-card wrapper" style="display: flex; width: 100%; height: 600px; flex-direction: column; ">
+        <iframe class="frame1" id="form-iframe" src={url} allowfullscreen
+        style="flex-grow: 1; border: none; margin: 0; padding: 0;-webkit-transform:scale(0.5);-moz-transform-scale(0.5);" frameborder={frameBorder}
+            scrolling={scrolling} onload={adjustIFrame}></iframe>
+    </div>
+-->
+
+</template>
