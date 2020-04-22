@@ -4,6 +4,8 @@ THIS SOFTWARE IS COVERED BY [THIS DISCLAIMER](https://raw.githubusercontent.com/
 
 This is enhanced iframe utility component to embed other page/site inside Salesforce. It was primarily built to show a Tableau viz inside Salesforce as there was not specific Lightning Web Component for iframes. I also added ability to automatically scale the Tableau viz if the size of the component changes based on stretching/shrinking the browser window. So the Tableau via will grow and shrink in size instead of rolling off the page and having typical iframe scroll bars.
 
+![alt text](https://github.com/thedges/PSIFramePlus/blob/master/TableauVizCommunity.png "Tableau Viz Community")
+
 Here are the main configuration options:
 
 | Parameter  | Definition |
