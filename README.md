@@ -15,7 +15,7 @@ Here are the main configuration options:
 | IFrame Height | The height in pixels of iframe. On initial setup, just keep playing with this value until the remote site fits in the window to your liking. |
 | IFrame Border | Options are 0 and 1. For 0 pixel or 1 pixel border. |
 | Scrollbars? | Options are 'auto', 'yes' and 'no' for scrollbars |
-| Original Width | The original width of source web site. This is used for the scaling calculations to resize the iframe and source content as one grows/shrinks the window. |
+| Original Width | The original width of source content. This is used for the scaling calculations to resize the iframe and source content as one grows/shrinks the window. |
 
 
 # Dynamic URL Parameters
