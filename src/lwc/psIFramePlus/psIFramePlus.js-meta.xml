@@ -14,10 +14,10 @@
         <targetConfig targets="lightning__AppPage,lightning__RecordPage,lightning__HomePage,lightningCommunity__Default">
             <property name="url" type="String" label="IFrame URL" default="https://www.salesforce.com"/>
             <property name="width" type="String" label="IFrame Width" default="100%"/>
-            <property name="height" type="String" label="IFrame Height" default="600"/>
+            <property name="height" type="String" label="IFrame Height (pixels)" default="600"/>
             <property name="frameBorder" type="String" label="IFrame Border" datasource="0,1" default="0"/>
-            <property name="scrolling" type="String" label="Display scrollbars?"  datasource="yes,no,auto" default="auto"/>
+            <property name="scrolling" type="String" label="Display scrollbars?" datasource="yes,no,auto" default="auto"/>
+            <property name="originalWidth" type="String" label="Original width of source (pixels)" />
         </targetConfig>
     </targetConfigs>
-
 </LightningComponentBundle>

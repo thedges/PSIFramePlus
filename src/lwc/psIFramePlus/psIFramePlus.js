@@ -13,13 +13,13 @@ export default class PsIFramePlus extends LightningElement {
   @api cssStyle = '';
   @api frameBorder = '0';
   @api scrolling = 'no';
-  originalWidth = 1487;
+  @api originalWidth = 1715;
 
   adjustIFrame () {
     console.log ('adjustIFrame invoked...');
   }
 
-  renderedCallback () {
+  connectedCallback () {
     var self = this;
 
     if (this.d3Initialized) {
@@ -35,11 +35,13 @@ export default class PsIFramePlus extends LightningElement {
         var main = this.template.querySelector('.main');
         main.style.height = (parseInt(self.height) + 5) + 'px';
 
-        var wrapper = this.template.querySelector('.wrapper');
+        var wrapper = self.template.querySelector('.wrapper');
         wrapper.style.height = self.height + 'px';
 
-        var fr = this.template.querySelector('.frame1');
-        var scale = el.clientWidth/this.originalWidth;
+        var fr = self.template.querySelector('.frame1');
+        var scale = fr.clientWidth/this.originalWidth;
+        console.log('scale=' + scale);
+
         if (scale < 1.0)
         {
           fr.style.webkitTransform = 'scale(' + scale.toFixed(4) + ')';
@@ -71,6 +73,8 @@ export default class PsIFramePlus extends LightningElement {
          console.log('data=' + JSON.stringify(data));
          var urlTemplate = Handlebars.compile(self.url);
          self.url = urlTemplate(data);
+
+         self.myFunction();
       })
       .catch (error => {
           self.handleError(error);
